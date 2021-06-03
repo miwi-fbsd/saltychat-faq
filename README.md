@@ -100,4 +100,4 @@ Note: If you have an IPv6 address, keep in mind to also change the DNS server fo
 
 ## FiveM: I don't hear people ingame
 
-Check if OneSync is enabled on your server. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
+Check if OneSync is enabled on your server and your artifacts are up-to-date. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
