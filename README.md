@@ -1,12 +1,22 @@
 # Salty Chat FAQ
 
+## Table of Content
+
+- [Where can I download an old version?](#where-can-i-download-an-old-version)
+- [How to enable extensive debug?](#how-to-enable-extensive-debug)
+- [My teamspeak crashs](#my-teamspeak-crashs)
+- [Installation of Salty Chat is corrupt](#installation-of-salty-chat-is-corrupt)
+- [*.ts3_plugin is unknown file](#ts3_plugin-is-unknown-file)
+- [FiveM: Connection Timeout](#fivem-connection-timeout)
+- [FiveM: I don't hear people ingame](#fivem-i-dont-hear-people-ingame)
+
 ## Where can I download an old version?
 
 You don't need to download an old version. All 2.X.X versions are full compatible. If you have any problems, follow the steps below:
 
-- If your TeamSpeak crashs, read chapter "My teamspeak crashs"
-- If you are using FiveM and your connection timeouts, read chapter "FiveM: Connection Timeout"
-- If you are using FiveM and you don't hear people ingame, rad chapter "FiveM: I don't hear people ingame"
+- If your TeamSpeak crashs, read chapter [My teamspeak crashs](#my-teamspeak-crashs)
+- If you are using FiveM and your connection timeouts, read chapter [FiveM: Connection Timeout](#fivem-connection-timeout)
+- If you are using FiveM and you don't hear people ingame, rad chapter [FiveM: I don't hear people ingame](#fivem-i-dont-hear-people-ingame)
 
 ## How to enable extensive debug?
 
@@ -19,7 +29,7 @@ You don't need to download an old version. All 2.X.X versions are full compatibl
 
 If your TeamSpeak crashs, update Salty Chat to version 2.3.3 or higher. If your TeamSpeak crashs with version 2.3.3 or higher, follow the steps below:
 
-1. Follow the steps in chapter "How to enable extensive debug?"
+1. Follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug)
 2. Start your game and try to reproduce to crash TeamSpeaks.
 3. Send us the newest crashdump (you can find it under `%appdata%\TS3Client\crashdumps`) in the Salty Chat Discord.
     - If there is no crashdump, send us the newest log (you can find it under `%appdata%\TS3Client\logs`)
@@ -41,7 +51,7 @@ If this does not help, follow the steps below:
 2. Copy the unzipped files.
 3. Go to `%appdata%\TS3Client\plugins` and paste the files.
 
-This is explained in more detail in the chapter "*.ts3_plugin is unknown file".
+This is explained in more detail in the chapter [*.ts3_plugin is unknown file](#ts3_plugin-is-unknown-file).
 
 ## *.ts3_plugin is unknown file
 
@@ -67,7 +77,7 @@ In FiveM websocket connections to `127.0.0.1` and `localhost` are blocked. So we
 1. Open Windows Command Prompt by searching `cmd`
 2. Execute `nslookup lh.saltmine.de`
 
-If it resolved to `127.0.0.1`, follow the steps in chapter "How to enable extensive debug?" and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord. If it not resolved to `127.0.0.1`, try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS).
+If it resolved to `127.0.0.1`, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord. If it not resolved to `127.0.0.1`, try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS).
 
 - Google DNS server: https://developers.google.com/speed/public-dns/docs/using#addresses
 - Cloudflare DNS server: https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/windows
@@ -77,4 +87,4 @@ Note: If you have an IPv6 address, keep in mind to also change the DNS server fo
 
 ## FiveM: I don't hear people ingame
 
-Check if OneSync is enabled on your server. If this does not help, follow the steps in chapter "How to enable extensive debug?" and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
+Check if OneSync is enabled on your server. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
