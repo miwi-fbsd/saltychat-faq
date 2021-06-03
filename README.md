@@ -6,7 +6,7 @@
 - [How to enable extensive debug?](#how-to-enable-extensive-debug)
 - [My teamspeak crashs](#my-teamspeak-crashs)
 - [Installation of Salty Chat is corrupt](#installation-of-salty-chat-is-corrupt)
-- [*.ts3_plugin is unknown file](#ts3_plugin-is-unknown-file)
+- [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-unknown-file)
 - [FiveM: Connection Timeout](#fivem-connection-timeout)
 - [FiveM: I don't hear people ingame](#fivem-i-dont-hear-people-ingame)
 
@@ -18,22 +18,23 @@ You don't need to download an old version. All 2.X.X versions are full compatibl
 - If you are using FiveM and your connection timeouts, read chapter [FiveM: Connection Timeout](#fivem-connection-timeout)
 - If you are using FiveM and you don't hear people ingame, rad chapter [FiveM: I don't hear people ingame](#fivem-i-dont-hear-people-ingame)
 
-## How to enable extensive debug?
+## How to enable debug logging?
 
 1. Open your TeamSpeak client
 2. Go to `Plugins > Salty Chat > Open Settings`
 3. Enable `Expert Mode`
-4. Select `ExtensiveDebug` for `Log Level`
+4. Select `Extensive` for `Log Level`
+**Don't enable ExtensiveDebug until further instructions, because this will result in a huge log file.**
 
 ## My teamspeak crashs
 
 If your TeamSpeak crashs, update Salty Chat to version 2.3.3 or higher. If your TeamSpeak crashs with version 2.3.3 or higher, follow the steps below:
 
-1. Follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug)
+1. Follow the steps in chapter [How to enable debug logging?](#how-to-enable-extensive-debug), except activating `ExtensiveDebug` instead `Extensive` for `Log Level`
 2. Start your game and try to reproduce to crash TeamSpeaks.
 3. Send us the newest crashdump (you can find it under `%appdata%\TS3Client\crashdumps`) in the Salty Chat Discord.
     - If there is no crashdump, send us the newest log (you can find it under `%appdata%\TS3Client\logs`)
-5. Provide us informations to reproduce the crash.
+4. Provide us informations to reproduce the crash.
 
 ## Installation of Salty Chat is corrupt
 
@@ -41,9 +42,21 @@ If you have the following error, follow the steps below:
 
 ![Installation of Salty Chat is corrupt](https://github.com/Hanashi/saltychat-faq/raw/main/images/installationCorrupt.png)
 
+### Solution A
+
+If you updated Salty Chat from a version prior or equal to 2.1.2, you may not have uninstalled Salty Chat before installing the new version:
+
+1. Close TeamSpeak
+2. Delete the files `%AppData%\TS3Client\plugins\SaltyChat.dll` and `%AppData%\TS3Client\plugins\VoiceDistortion.dll`
+3. Install the latest Salty Chat release
+
+### Solution B
+
 Install the latest Visual C++ Redistributable:
 - x86: https://aka.ms/vs/16/release/vc_redist.x86.exe
 - x64: https://aka.ms/vs/16/release/vc_redist.x64.exe
+
+### Solution C
 
 If this does not help, follow the steps below:
 
@@ -51,7 +64,7 @@ If this does not help, follow the steps below:
 2. Copy the unzipped files.
 3. Go to `%appdata%\TS3Client\plugins` and paste the files.
 
-This is explained in more detail in the chapter [*.ts3_plugin is unknown file](#ts3_plugin-is-unknown-file).
+This is explained in more detail in the chapter [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-unknown-file).
 
 ## *.ts3_plugin is unknown file
 
@@ -87,4 +100,4 @@ Note: If you have an IPv6 address, keep in mind to also change the DNS server fo
 
 ## FiveM: I don't hear people ingame
 
-Check if OneSync is enabled on your server. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
+Check if OneSync is enabled on your server and your artifacts are up-to-date. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
