@@ -3,7 +3,7 @@
 ## Table of Content
 
 - [Where can I download an old version?](#where-can-i-download-an-old-version)
-- [How to enable extensive debug?](#how-to-enable-extensive-debug)
+- [How to enable debug logging?](#how-to-enable-debug-logging)
 - [My teamspeak crashs](#my-teamspeak-crashs)
 - [Installation of Salty Chat is corrupt](#installation-of-salty-chat-is-corrupt)
 - [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-unknown-file)
@@ -30,7 +30,7 @@ You don't need to download an old version. All 2.X.X versions are full compatibl
 
 If your TeamSpeak crashs, update Salty Chat to version 2.3.3 or higher. If your TeamSpeak crashs with version 2.3.3 or higher, follow the steps below:
 
-1. Follow the steps in chapter [How to enable debug logging?](#how-to-enable-extensive-debug), except activating `ExtensiveDebug` instead `Extensive` for `Log Level`
+1. Follow the steps in chapter [How to enable debug logging?](#how-to-enable-debug-logging), except activating `ExtensiveDebug` instead `Extensive` for `Log Level`
 2. Start your game and try to reproduce to crash TeamSpeaks.
 3. Send us the newest crashdump (you can find it under `%appdata%\TS3Client\crashdumps`) in the Salty Chat Discord.
     - If there is no crashdump, send us the newest log (you can find it under `%appdata%\TS3Client\logs`)
@@ -90,7 +90,7 @@ In FiveM websocket connections to `127.0.0.1` and `localhost` are blocked. So we
 1. Open Windows Command Prompt by searching `cmd`
 2. Execute `nslookup lh.saltmine.de`
 
-If it resolved to `127.0.0.1`, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord. If it not resolved to `127.0.0.1`, try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS).
+If it resolved to `127.0.0.1`, follow the steps in chapter [How to enable debug logging?](#how-to-enable-debug-logging) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord. If it not resolved to `127.0.0.1`, try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS).
 
 - Google DNS server: https://developers.google.com/speed/public-dns/docs/using#addresses
 - Cloudflare DNS server: https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/windows
@@ -100,4 +100,4 @@ Note: If you have an IPv6 address, keep in mind to also change the DNS server fo
 
 ## FiveM: I don't hear people ingame
 
-Check if OneSync is enabled on your server and your artifacts are up-to-date. If this does not help, follow the steps in chapter [How to enable extensive debug?](#how-to-enable-extensive-debug) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
+Check if OneSync is enabled on your server and your artifacts are up-to-date. If this does not help, follow the steps in chapter [How to enable debug logging?](#how-to-enable-debug-logging) and send us the newest log (you can find it under `%appdata%\TS3Client\logs`) in Salty Chat Discord.
